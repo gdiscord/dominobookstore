@@ -36,7 +36,7 @@ public class NewBookProxy extends ViewBaseClientPresenter<NewBookView> implement
             BooksServiceFactory.INSTANCE
                     .create(view.save())
                     .onSuccess(book -> {
-                        history().fireState( book.getTitle());
+                        history().fireState("books/" + book.getTitle());
                         view.close();
                     })
                     .onFailed(failedResponseBean -> view.onError(failedResponseBean.getBody()))
