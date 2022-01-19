@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @RequestFactory
+@Path("/books")
 public interface BooksService {
     @Path("")
     @GET

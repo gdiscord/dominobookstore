@@ -16,5 +16,10 @@ public interface BooksView extends ContentView, HasUiHandlers<BooksView.BooksUiH
 
 
     interface BooksUiHandlers extends UiHandlers {
+        void deleteBook(Book book);
+
+        void onBookSelected(Book record);
+
+        void onCreate();
     }
 }

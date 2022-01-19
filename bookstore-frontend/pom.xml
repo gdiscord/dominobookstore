@@ -71,7 +71,7 @@
             <version>${project.version}</version>
             <type>gwt-lib</type>
         </dependency>
-	</dependencies>
+			</dependencies>
     <build>
         <plugins>
             <plugin>
